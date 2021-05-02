@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B197EA"
+    android:orientation="vertical"
+    tools:context=".ConversorActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarConversor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <Button
+        android:id="@+id/btnVolta"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/black"
+        app:icon="@drawable/abc_vector_test"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtChave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Chave R$: ex: 8.50"
+        android:layout_marginTop="50dp"
+        android:textColorHint="#474646"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/txtValor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+       android:hint="Valor: "
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:textColorHint="#474646"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:layout_gravity="center"
+        android:text="PESO" />
+
+    <Button
+        android:id="@+id/btnReal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/black"
+        android:text="REAL" />
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        />
+
+    <Button
+        android:id="@+id/btnLimpa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#6C6B6B"
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"
+        android:text="Limpar" />
+
+</LinearLayout>
+
+
